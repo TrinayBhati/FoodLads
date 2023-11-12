@@ -1,22 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Nekst Black';
+    src: url('assets/FontsFree-Net-Nekst-Black.ttf') format('woff'),
+         url('assets/FontsFree-Net-Nekst-Black.ttf') format('woff2');
+    font-weight: 700; /* You can adjust this as needed */
+    font-style: normal; /* or italic if applicable */
+  }
+body{
+    background-color: #263A29;
+    color: #F58840;
+    ::selection{
+      color: white;
+      background-color: #263A29;
+    }
+}
+.main-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 .header{
+    padding: 30px 50px 0px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: #263A29;
+    color: #F58840;
+}
+.flex-items{
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
 }
-.nav-items > ul {
+.nav-items{
     display: flex;
-    list-style-type: none;
-    flex-wrap: wrap; 
+    gap: 5%;
+    width: 30%;
 }
-.nav-items ul > li{
-    padding: 20px;
+.date-items{
+    width: 40%;
+    display: flex;
+    justify-content: center;
 }
-.header-logo{
-    width: 100px;
+.date-items > span {
+    font-size: 1rem;
+    transition: transform 0.5s ease;
 }
+.date-items> span:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+.icon-items{
+    width: 30%;
+    display: flex;
+    justify-content:right;
+    gap : 5%; 
+    font-size: 1.3rem;
+}
+.icon-items > span {
+  font-size: 1.3rem;
+  transition: transform 0.5s ease;
+}
+.icon-items > span:hover {
+  transform: scale(1.3); 
+  cursor: pointer;
+}
+.sp1{
+  /* color : #FFD700; */
+  /* color: #D67BFF; */
+  color: white;
+}
+.logo-base{
+  font-size: 22vw; 
+  text-align: center;
+  font-family: 'Nekst Black', sans-serif;
+  font-weight: bold;
+  letter-spacing: -5px; 
+  }
+.logo-first{
+  margin-top: -50px;
+  font-size: 16vw; 
+  text-align: center;
+  font-family: 'Nekst Black', sans-serif;
+  font-weight: bold;
+  letter-spacing: -5px; 
+}
+.logo-second{
+  margin-top: -80px;
+  font-size: 8vw; 
+  text-align: center;
+  font-family: 'Nekst Black', sans-serif;
+  font-weight: bold;
+  letter-spacing: -3px; 
+}
+.logo-last{
+  margin-top: -70px;
+  font-size: 4vw; 
+  text-align: center;
+  font-family: 'Nekst Black', sans-serif;
+  font-weight: bold;
+}
+.logo-base, .logo-first, .logo-second, .logo-last {
+  transition: font-size 0.5s ease, margin-top 0.5s ease;
+}
+.main-header {
+  transition: height 0.7s ease;
+}
+.upper-body{
+  margin: 10px 50px 30px 50px;
+  height: 20vh;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.upper-body > h1{
+  text-align: center;
+  font-family: 'Rubik', sans-serif; 
+   font-size: 3rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+.btn {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+    cursor: pointer;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background-color: white;
+    transition: .5s ease;
+  }
+  .btn:hover{
+    color: white;
+  }
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card{
+  background-color: #2F5241;
+  color: white;
     width: 200px;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px;
 }
 .card> img{

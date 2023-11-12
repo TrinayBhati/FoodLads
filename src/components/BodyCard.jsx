@@ -1,12 +1,13 @@
-const BodyCard = ({ elem }) => {
+import { IMG_URL } from "../config";
+
+const Card = ({ elem }) => {
   return (
     <div className="card">
-      <img src={elem.image} />
-      <h2>{elem.name}</h2>
-      <h3>{elem.cuisines.join(", ")}</h3>
-      <h4>{elem.rating}</h4>
+      <img src={IMG_URL + elem?.info?.cloudinaryImageId} />
+      <h2>{elem?.info?.name}</h2>
+      <h3>{elem?.info?.cuisines.join(", ")}</h3>
+      <h4>{elem?.info?.avgRating}</h4>
     </div>
   );
 };
-
-export default BodyCard;
+export default Card;
