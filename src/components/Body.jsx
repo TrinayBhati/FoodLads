@@ -48,34 +48,38 @@ const Body = () => {
     return ans;
   };
 
-  return !cardData ? (
-    <Skeleton />
-  ) : (
+  return (
     <>
       <UpperBody />
-      <div className="search-component">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="search"
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        ></input>
-        <button className="search-btn" onClick={searchClick}>
-          Search
-        </button>
-      </div>
-      <div className="main-body">
-        {filteredCardData?.length == 0 ? (
-          <h1>no result found</h1>
-        ) : (
-          filteredCardData?.map((elem) => (
-            <BodyCard elem={elem} key={elem?.info?.id} />
-          ))
-        )}
-      </div>
+      {!cardData ? (
+        <Skeleton />
+      ) : (
+        <div>
+          <div className="search-component">
+            <input
+              type="text"
+              className="search-input"
+              placeholder="search"
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+            ></input>
+            <button className="search-btn" onClick={searchClick}>
+              Search
+            </button>
+          </div>
+          <div className="main-body">
+            {filteredCardData?.length == 0 ? (
+              <h1>no result found</h1>
+            ) : (
+              filteredCardData?.map((elem) => (
+                <BodyCard elem={elem} key={elem?.info?.id} />
+              ))
+            )}
+          </div>
 
-      <h1 style={styleObj}>Body</h1>
+          <h1 style={styleObj}>Body</h1>
+        </div>
+      )}
     </>
   );
 };
