@@ -11,6 +11,7 @@ const Skeleton = () => {
             <div className="skeleton-text"></div>
             <div className="skeleton-text"></div>
             <div className="skeleton-text"></div>
+            <div className="skeleton-text"></div>
           </div>
         ))}
     </div>

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import img1 from "../../assets/upp1.png";
-import img2 from "../../assets/upp2.png";
-import img3 from "../../assets/upp3.png";
-import img4 from "../../assets/upp4.png";
-import img5 from "../../assets/upp5.png";
-import img6 from "../../assets/upp6.png";
+import img1 from "../../../assets/upp1.png";
+import img2 from "../../../assets/upp2.png";
+import img3 from "../../../assets/upp3.png";
+import img4 from "../../../assets/upp4.png";
+import img5 from "../../../assets/upp5.png";
+import img6 from "../../../assets/upp6.png";
 
 const UpperBody = () => {
   useEffect(() => {

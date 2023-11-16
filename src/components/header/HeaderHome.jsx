@@ -1,16 +1,13 @@
-import logo from "../../assets/header-logo.png";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { BsHandbag } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
-const Title = () => (
-  <a href="/">
-    <img className="header-logo" alt="logo" src={logo} />
-  </a>
-);
-const Header = () => {
+const HeaderHome = () => {
   const [scroll, setScroll] = useState(0);
+
+  const navigate = useNavigate();
 
   const today = dayjs();
   const dayInWords = today.format("ddd");
@@ -53,9 +50,15 @@ const Header = () => {
         <div className="header">
           <div className="flex-items">
             <div className="nav-items">
-              <span className="btn">HOME</span>
-              <span className="btn">ABOUT</span>
-              <span className="btn">CONTACT</span>
+              <span className="btn" onClick={() => navigate("/")}>
+                HOME
+              </span>
+              <span className="btn" onClick={() => navigate("/menu/35798")}>
+                ORDER IN
+              </span>
+              <span className="btn" onClick={() => navigate("/dishes")}>
+                Dishes
+              </span>
               <span className="btn">GITHUB</span>
             </div>
             {scrollClass != "logo-last" && scrollClass != "logo-second" && (
@@ -76,7 +79,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className={scrollClass}>
+        <div className={scrollClass} onClick={() => navigate("/")}>
           <span className="sp1">food</span>
           <span className="sp2">Lads</span>
         </div>
@@ -86,4 +89,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderHome;

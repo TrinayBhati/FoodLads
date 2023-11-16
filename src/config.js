@@ -1,89 +1,44 @@
-export const IMG_URL =
+import biriyani from "../assets/biriyani.png";
+import burger from "../assets/burger.png";
+import rolls from "../assets/rolls1.png";
+import pizza from "../assets/pizza.png";
+import cake from "../assets/cake.png";
+import chicken from "../assets/chicken.png";
+import momos from "../assets/momos.png";
+import paneer from "../assets/paneer.png";
+import thali from "../assets/thali.png";
+import noodles from "../assets/noodles.png";
+import chowmein from "../assets/chowmein.png";
+import sandwich from "../assets/sandwich.png";
+import northIndian from "../assets/northIndian.png";
+import dosa from "../assets/dosa.png";
+import rice from "../assets/rice.png";
+import idli from "../assets/idli.png";
+import butterChicken from "../assets/butterChicken.png";
+
+export const IMG_SWIGGY_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
-export const ResturantData = [
-  {
-    name: "Delicious Delights",
-    rating: 4.5,
-    cuisines: ["Italian", "Mediterranean"],
-    image: "https://example.com/delicious-delights.jpg",
-    id: 8924,
-  },
-  {
-    name: "Sizzling Sushi House",
-    rating: 4.2,
-    cuisines: ["Japanese", "Sushi"],
-    image: "https://example.com/sizzling-sushi-house.jpg",
-    id: 4524,
-  },
-  {
-    name: "Burger Barn",
-    rating: 4.0,
-    cuisines: ["American", "Burgers"],
-    image: "https://example.com/burger-barn.jpg",
-    id: 1224,
-  },
-  {
-    name: "Spice Palace",
-    rating: 4.4,
-    cuisines: ["Indian", "Spicy"],
-    image: "https://example.com/spice-palace.jpg",
-    id: 924,
-  },
-  {
-    name: "Seafood Haven",
-    rating: 4.7,
-    cuisines: ["Seafood", "Cajun"],
-    image: "https://example.com/seafood-haven.jpg",
-    id: 314,
-  },
-  {
-    name: "Mama Mia Pizzeria",
-    rating: 4.3,
-    cuisines: ["Italian", "Pizza"],
-    image: "https://example.com/mama-mia-pizzeria.jpg",
-    id: 3242,
-  },
-  {
-    name: "Taco Town",
-    rating: 4.1,
-    cuisines: ["Mexican", "Tacos"],
-    image: "https://example.com/taco-town.jpg",
-    id: 3248,
-  },
-  {
-    name: "Green Garden",
-    rating: 4.6,
-    cuisines: ["Vegetarian", "Healthy"],
-    image: "https://example.com/green-garden.jpg",
-    id: 334,
-  },
-  {
-    name: "Sizzlin Steaks",
-    rating: 4.8,
-    cuisines: ["Steakhouse", "Grill"],
-    image: "https://example.com/sizzlin-steaks.jpg",
-    id: 34,
-  },
-  {
-    name: "Noodle Nirvana",
-    rating: 4.4,
-    cuisines: ["Asian", "Noodles"],
-    image: "https://example.com/noodle-nirvana.jpg",
-    id: 32,
-  },
-  {
-    name: "The Breakfast Club",
-    rating: 4.0,
-    cuisines: ["Breakfast", "Brunch"],
-    image: "https://example.com/the-breakfast-club.jpg",
-    id: 324,
-  },
-  {
-    name: "Pasta Paradise",
-    rating: 4.3,
-    cuisines: ["Italian", "Pasta"],
-    image: "https://example.com/pasta-paradise.jpg",
-    id: 3294,
-  },
+export const IMG_ZOMATO_URL =
+  "https://b.zmtcdn.com/data/dish_photos/9da/d446c49c29beb741b1191d019e24c9da.jpg";
+
+export const dish_data = [
+  { name: "Biriyani", id: 30308, image: biriyani },
+  { name: "Pizza", id: 68987, image: pizza },
+  { name: "Burger", id: 9055, image: burger },
+  { name: "Chicken", id: 55280, image: chicken },
+  { name: "Cake", id: 39212, image: cake },
+  { name: "Rolls", id: 56691, image: rolls },
+  { name: "Dosa", id: 10296, image: dosa },
+  { name: "Momos", id: 8497, image: momos },
+  { name: "Paneer", id: 11035, image: paneer },
+  { name: "Butter Chicken", id: 27145, image: butterChicken },
+  { name: "Thali", id: 35013, image: thali },
+  { name: "Noodles", id: 19315, image: chowmein },
+  { name: "Sandwich", id: 64088, image: sandwich },
+  { name: "North Indian", id: 35798, image: northIndian },
+  { name: "Fried Rice", id: 35301, image: rice },
+  { name: "Idli", id: 35114, image: idli },
+  { name: "Butter Chicken", id: 27145, image: butterChicken },
+  { name: "Chowmein", id: 4806, image: noodles },
 ];
