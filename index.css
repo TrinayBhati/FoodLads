@@ -146,7 +146,8 @@ a{
 }
 .offer-card {
   box-sizing: border-box;
-  height: 254px;
+  height: 17vw;
+  max-height: 256px;
   background: #2F5241 ;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6px);
@@ -205,7 +206,8 @@ a{
 .color span {
   opacity: 1;
   transition: opacity 0.1s linear;
-  color: white;
+  color: #2F5241;
+  text-shadow: 1 1 1 #1d4632;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   font-size: 2.2em;
@@ -214,10 +216,10 @@ a{
   opacity: 0;
 }
 .color:nth-child(1) {
-  background: #264653;
+  background: #F9F3CC;
 }
 .color:nth-child(2) {
-  background: #2a9d8f;
+  background: #ECEE81;
 }
 .color:nth-child(3) {
   background: #e9c46a;
@@ -242,7 +244,6 @@ a{
   margin: 10px 50px 30px 50px;
   height: 100%;
   border-top: 2px solid gray;
-  overflow: hidden;
 }
 .suggest-flex{
   display: flex;
@@ -591,6 +592,9 @@ a{
     height: 50%;
     object-fit: contain;
   }
+  .suggest-main{
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -624,5 +628,8 @@ a{
   .offer-card > img{
     height: 70%;
     object-fit: contain;
+  }
+  .suggest-main{
+    overflow: hidden;
   }
 }
