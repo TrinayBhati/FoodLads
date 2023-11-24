@@ -14,24 +14,24 @@ const MenuSuggest = () => {
         <div className="slider-text">
           Try something <span className="sp1">new!</span>
         </div>
-        <div class="palette">
-          <div class="color" onClick={() => navigate("/menu/30308")}>
+        <div className="palette">
+          <div className="color" onClick={() => navigate("/menu/30308")}>
             <span>Biriyani</span>
             <img src={biriyani} />
           </div>
-          <div class="color" onClick={() => navigate("/menu/9055")}>
+          <div className="color" onClick={() => navigate("/menu/9055")}>
             <span>Burgers</span>
             <img src={burger} />
           </div>
-          <div class="color" onClick={() => navigate("/menu/55280")}>
+          <div className="color" onClick={() => navigate("/menu/55280")}>
             <span>Chicken</span>
             <img src={chicken} />
           </div>
-          <div class="color" onClick={() => navigate("/menu/11035")}>
+          <div className="color" onClick={() => navigate("/menu/11035")}>
             <span>Paneer</span>
             <img src={paneer} />
           </div>
-          <div class="color" onClick={() => navigate("/menu/56691")}>
+          <div className="color" onClick={() => navigate("/menu/56691")}>
             <span>Rolls</span>
             <img src={rolls} />
           </div>

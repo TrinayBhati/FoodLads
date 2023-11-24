@@ -1,20 +1,32 @@
-import { IMG_URL } from "../../config";
+import { useNavigate } from "react-router-dom";
 
 const MenuCard = ({ elem }) => {
+  const navigate = useNavigate();
   return (
-    <div className="temporary__storage">
+    <div
+      className="temporary__storage"
+      onClick={() => {
+        navigate(
+          `/restaurant/${elem?.info?.name
+            ?.split(" ")
+            .join("-")
+            .toLowerCase()
+            .trim()}`
+        );
+      }}
+    >
       <div className="card">
-        <img className="image" src={elem?.image.url} />
+        <img className="image" src={elem?.info?.image.url} />
         <div className="image__overlay"></div>
         <div className="content">
           <div className="content__text">
-            <span className="stream__title">{elem?.name}</span>
+            <span className="stream__title">{elem?.info?.name}</span>
             <div className="content__body">
               <span className="streamer__name">
-                <span>{elem?.rating?.aggregate_rating}⭐</span>
-                <span>{elem?.costText?.text}</span>
+                <span>{elem?.info?.rating?.aggregate_rating}⭐</span>
+                <span>{elem?.info?.costText?.text}</span>
               </span>
-              <span className="event">{elem?.locality?.name}</span>
+              <span className="event">{elem?.info?.locality?.name}</span>
               {/* <span>{elem?.cft?.text}</span> */}
             </div>
 

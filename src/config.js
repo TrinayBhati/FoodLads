@@ -16,6 +16,8 @@ import rice from "../assets/rice.png";
 import idli from "../assets/idli.png";
 import butterChicken from "../assets/butterChicken.png";
 
+//https://www.zomato.com/webroutes/getPage?page_url=/ncr/restaurants?place_name=Ywca%2C+1%2C+Ashoka+Rd%2C+Hanuman+Road+Area%2C+Connaught+Place%2C+New+Delhi%2C+Delhi&dishv2_id=12025&location=&isMobile=0
+
 export const IMG_SWIGGY_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 

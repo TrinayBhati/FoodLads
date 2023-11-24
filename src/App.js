@@ -6,6 +6,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./containers/Layout";
 import MenuPage from "./components/menu/MenuPage";
 import Dishes from "./components/Dishes";
+import RestaurantDetails from "./components/restaurantDetails/RestaurantDetails";
 
 const AppLayout = () => (
   <>
@@ -25,6 +26,14 @@ const AppLayout = () => (
           element={
             <Layout>
               <Dishes />
+            </Layout>
+          }
+        />
+        <Route
+          path="/restaurant/:id"
+          element={
+            <Layout>
+              <RestaurantDetails />
             </Layout>
           }
         />

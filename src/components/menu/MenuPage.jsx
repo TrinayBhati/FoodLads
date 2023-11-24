@@ -35,7 +35,7 @@ const MenuPage = () => {
               {
                 // console.log(cardData.map((elem) => elem?.info))
                 cardData?.map((elem) => (
-                  <MenuCard elem={elem.info} key={elem?.info?.resId} />
+                  <MenuCard elem={elem} key={elem?.info?.resId} />
                 ))
               }
             </div>
